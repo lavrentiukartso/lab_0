@@ -1,3 +1,9 @@
+Через термінал чи командну строку в потрібній директорії запусти команду:
+```
+git clone https://github.com/Codefinity-py/lab_0.git
+```
+Після встановлення відкрий папку в зручному IDE.
+
 Спершу треба встановити віртуальне оточення (venv):
 ```
 python -m venv venv
@@ -33,3 +39,15 @@ python main.py
 git commit -am 'Solution'
 git push origin develop
 ```
+
+```
+git remote remove origin
+git remote add origin https://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@github.com/Codefinity-py/lab_0.git
+git remote -v
+```
+Після останньої команди ти маєш отримати в терміналі таку саме посилання як в попередній команді.
+А тепер ти можеш запушити свою відповідь.
+```
+git push origin develop
+```
+Якщо ти стикнувся з проблемою і зараз зв'яжись з твоїм куратором чи лектором курсу.
