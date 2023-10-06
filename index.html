@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Text Animation</title>
+    <style>
+        body {
+            background-color: black;
+            overflow: hidden;
+            margin: 0;
+        }
+        
+        #animation {
+            font-size: 24px;
+            color: green;
+            white-space: nowrap;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="animation"></div>
+    <script>
+        const animationElement = document.getElementById('animation');
+        const text = '01010101010101010101'; // Рядок з одиниць і нульок
+
+        function startAnimation() {
+            let animationText = '';
+            for (let i = 0; i < 1000; i++) { // Зациклюємо 1000 разів
+                animationText += text;
+            }
+            animationElement.textContent = animationText;
+        }
+
+        startAnimation();
+    </script>
+</body>
+</html>
